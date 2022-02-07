@@ -58,6 +58,8 @@ export const TETROMINOS = {
   },
 };
 
+// console.log(TETROMINOS);
+
 export const randomTetromino = () => {
   const tetrominos = "IJLOSTZ";
   const randTetromino =

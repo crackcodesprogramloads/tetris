@@ -2,16 +2,23 @@ import styled from "styled-components";
 
 export const StyledStartButton = styled.button`
   box-sizing: border-box;
-  margin: 0 0 20px 0;
-  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0px 0px 10px 10px;
+  padding: 15px;
+  border: 3px solid rgb(0, 220, 255);
+  opacity: 90%;
   min-height: 30px;
   width: 100%;
-  border-radius: 20px;
-  border: none;
-  color: white;
-  background: #333;
+  border-radius: 15px;
+  color: ${(props) => (props.gameOver ? "red" : "white")};
+  background: transparent;
   font-family: Pixel, Arial, Helvetica, sans-serif;
   font-size: 1rem;
-  outline: none;
   cursor: pointer;
+
+  &:hover {
+    opacity: 100%;
+  }
 `;
